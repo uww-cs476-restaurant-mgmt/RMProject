@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Include bootstrap CSS -- Messes up the page DELETE LATER -->
+        <!--<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">-->
+        <link rel="stylesheet" href="RMProject.css">
+        <script src="RMProject.js"></script>
+    </head>
+    <body>
+        <!--Create a banner at the top of the webpage-->
+        <div id="banner">
+            <!-- Display the 841 Brewhouse logo in the top left corner -->
+            <img src="brewhouseLogo.avif" alt="841 Brewhouse's Logo" width="100px">
+        </div>
+
+        <!-- Create a navigation bar to lead to different html pages based
+        on category/section of the menu -->
+        <div class="leftBox">
+            <ul>
+                <li><label><input type="button" class="categoryButtons" id="allCategories" value="All Categories"></label></li>
+                <li><label><input type="button" class="categoryButtons" id="beveragesAlcohol" value="Beverages/Alcohol"></label></li>
+                <li><label><input type="button" class="categoryButtons" id="starters" value="Starters"></label></li>
+                <li><label><input type="button" class="categoryButtons" id="baskets" value="Baskets"></label></li>
+                <li><label><input type="button" class="categoryButtons" id="salads" value="Salads"></label></li>
+                <li><label><input type="button" class="categoryButtons" id="wraps" value="Wraps"></label></li>
+                <li><label><input type="button" class="categoryButtons" id="burgers" value="Burgers"></label></li>
+                <li><label><input type="button" class="categoryButtons" id="beefPork" value="Beef & Pork"></label></li>
+                <li><label><input type="button" class="categoryButtons" id="sandwiches" value="Sandwiches"></label></li>
+                <li><label><input type="button" class="categoryButtons" id="chicken" value="Chicken"></label></li>
+                <li><label><input type="button" class="categoryButtons" id="seafood" value="Seafood"></label></li>
+                <li><label><input type="button" class="categoryButtons" id="pastaStirFry" value="Pasta & Stir Fry"></label></li>
+            </ul>
+        </div>
+        
+        <!-- Food items for middle sections -- different for every html page -->
+        <div class="middleBox">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td>Chicken</td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+        <!-- Create a shopping cart to hold all of the currently selected items -->
+        <div class="rightBox">
+            <table class="table">
+                <thead id="cartLabels">
+                  <td>Product Name</td>
+                  <td>Price</td>
+                </thead>
+                <tbody id="shoppingCart">
+                    <!-- The items will display here once selected -->
+                </tbody>
+                <tfoot>
+                    <!-- Total price will display here once items are selected -->
+                    <td id="totalPriceLabel"></td>
+                    <td id="totalPrice"></td>
+                </tfoot>
+              </table>
+              <label><input type="button" id="checkout" value="Checkout"></label>
+              <label><input type="button" id="clear" value="Clear"></label>
+        </div>
+    </body>
+</html>

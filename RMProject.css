@@ -1,0 +1,116 @@
+/* **** MAIN CSS ISSUES ****
+(1) Shopping cart is not centered within itself
+(2) Receipt is not centered (when you try only the header centers because I got lazy
+    and just set the id="shoppingCart" to make it easier to append the selected items
+*/
+
+body { /* For entire document -- easier to update */
+    font-style: italic; /* For everything except all categories buttons & add buttons */
+}
+
+#banner { /* Create banner along top of webpage */
+    background-color: maroon;
+    height: 87px;
+}
+
+ul { /* Remove bullet points from category buttons */
+    list-style-type: none;
+}
+
+li { /* Separate category buttons from each other */
+    margin-bottom: 0.75em;
+}
+
+.categoryButtons { /* Category buttons */
+    font-weight: bold;
+    color: goldenrod;
+    padding: 10px 20px;
+    width: 150px;
+    border: 1px solid goldenrod;
+    background-color: maroon;
+}
+
+.homePageButton { /* Home Page button on receipt.html -- takes you back to allCategories page */
+    justify-content: bottom;
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+    width: 150px;
+    border: 1px solid white;
+    background-color: black;
+}
+
+#allCategoriesImg { /* Get image for allCategories to the center of the screen */
+    margin-left: 10em;
+    margin-top: 9em;
+}
+
+.leftBox { /* Create a black border around category buttons */
+    float: left; /* Keep category buttons at left side of webpage */
+    margin: 0 auto;
+    width: 13em;
+    height: 38em;
+    border: 1px solid black;
+    padding: 5px;    
+}
+
+.middleBox { /* Create a black border around center menu items on the website */
+    display: inline-flex; /* Keep menu items in the center */
+    margin: 0 auto;
+    width: 39.68em;
+    height: 38em;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.rightBox { /* Create a black border around shopping cart */
+    float: right; /* Keep shopping cart at right side of webpage */
+    margin: 0 auto;
+    width: 23em;
+    height: 38em;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#cartLabels { /* For the labels at the top of the shopping cart */
+    font-weight: bold;
+    font-size: 25px;
+}
+
+td:nth-child(2) { /* Separate headers in shopping cart from each other */
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 2em;
+}
+
+#checkout, #clear { /* For checkout & clear buttons in shopping cart */
+    background-color: goldenrod;
+    font-style: italic;
+    font-weight: bold;
+    border: none;
+    width: 100px;
+    height: 35px;
+    margin: 25px; /* Separate the buttons from each other and center them */
+}
+
+.menuItems { /* For menu items in the center */
+    font-size: 25px;
+}
+
+.addItem { /* For add buttons to add menu items to shopping cart */
+    background-color: goldenrod;
+    font-style: italic;
+    font-weight: bold;
+    border: none;
+    width: 100px;
+    height: 35px;
+}
+
+.receipt { /* To stylize the receipt after the checkout button is clicked */
+    font-size: 25px;
+}
+ 
+#receiptHeader { /* To stylize the receipt header */
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
