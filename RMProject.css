@@ -50,7 +50,7 @@ li { /* Separate category buttons from each other */
 .middleBox { /* Create a black border around center menu items on the website */
     display: inline-flex; /* Keep menu items in the center */
     margin: 0 auto;
-    width: 57.6%; /* Formerly 39.68em */
+    width: 57%; /* Formerly 39.68em */
     height: 38em;
     border: 1px solid black;
     padding: 5px;
