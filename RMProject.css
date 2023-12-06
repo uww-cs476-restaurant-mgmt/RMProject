@@ -50,7 +50,7 @@ li { /* Separate category buttons from each other */
 .middleBox { /* Create a black border around center menu items on the website */
     display: inline-flex; /* Keep menu items in the center */
     margin: 0 auto;
-    width: 57.6%; /* Formerly 39.68em */
+    width: 57%; /* Formerly 39.68em */
     height: 38em;
     border: 1px solid black;
     padding: 5px;
@@ -107,3 +107,43 @@ td:nth-child(2) { /* Separate headers in shopping cart from each other */
     font-weight: bold;
     border-bottom: 1px solid black;
 }
+
+.popup{
+    width: 400px;
+    background: maroon;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 1ch 30px;
+    color: #fff;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.popup h2{
+    font-size: 28px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+    color: #fff;
+}
+.popup-button{
+    margin-top: 15px;
+    font-size:  14px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: goldenrod;
+    font-style: italic;
+    border: none;
+    width: 100px;
+    height: 37px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
