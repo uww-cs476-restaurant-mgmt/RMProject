@@ -19,20 +19,15 @@
         <div class="leftBox">
             <ul>
                 <li><label><input type="button" class="categoryButtons" id="allCategories" value="All Categories"></label></li>
-                <li><label><input type="button" class="categoryButtons" id="beveragesAlcohol" value="Beverages/Alcohol"></label></li>
                 <li><label><input type="button" class="categoryButtons" id="starters" value="Starters"></label></li>
                 <li><label><input type="button" class="categoryButtons" id="baskets" value="Baskets"></label></li>
                 <li><label><input type="button" class="categoryButtons" id="salads" value="Salads"></label></li>
                 <li><label><input type="button" class="categoryButtons" id="wraps" value="Wraps"></label></li>
-                <li><label><input type="button" class="categoryButtons" id="burgers" value="Burgers"></label></li>
-                <li><label><input type="button" class="categoryButtons" id="beefPork" value="Beef & Pork"></label></li>
                 <li><label><input type="button" class="categoryButtons" id="sandwiches" value="Sandwiches"></label></li>
-                <li><label><input type="button" class="categoryButtons" id="chicken" value="Chicken"></label></li>
-                <li><label><input type="button" class="categoryButtons" id="seafood" value="Seafood"></label></li>
-                <li><label><input type="button" class="categoryButtons" id="pastaStirFry" value="Pasta & Stir Fry"></label></li>
+                <li><label><input type="button" class="categoryButtons" id="entrees" value="Entrees"></label></li>
             </ul>
         </div>
-        
+
         <!-- Food items for middle sections -- different for every html page -->
         <div class="middleBox">
             <table class="table">
@@ -42,154 +37,82 @@
                     </tr>
                 </thead>
                <tbody class="menuItems">
-                    <tr class="menu-item" id="st-0">
-                        <td id="item-0">Guacamole & Chips</td>
-                        <td id="price-0">$7.25</td>
-                        <td id='select-0'><button type='button' value='0' id='cb-0' onclick="openPopup()" class="addItem">Add</button>
-                            <div class="popup" id="popup">
-                                <h2>Choice of Sauces</h2>
-                                <button type='button' onclick="closePopup()" class="popup-button">Buffalo Sauce</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Signature 841</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Sweet Chili Sauce</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Garlic Oarmesan</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Brew House Barbeque</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Honey Mustard</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">None</button>
-                            </div>
+                    <tr class="menu-item" id="1">
+                        <td id="item-1">Guacamole & Chips</td>
+                        <td id="price-1">$7.25</td>
+                        <td id='select-1'><button type='button' value='1' id='cb-1' class="addItem">Add</button>
                     </tr>
-                    <tr class="menu-item" id="st-1">
-                        <td id="item-1">841 Tatchos</td>
-                        <td id="price-1">$10.95</td>
-                        <td id='select-1'><button type='button' value='1' id='cb-1' onclick="openPopup()" class="addItem">Add</button>
-                            <div class="popup" id="popup">
-                                <h2>Choice of Sauces</h2>
-                                <button type='button' onclick="closePopup()" class="popup-button">Buffalo Sauce</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Signature 841</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Sweet Chili Sauce</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Garlic Oarmesan</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Brew House Barbeque</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Honey Mustard</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">None</button>
-                            </div>
-                    </tr>
-                    <tr class="menu-item" id="st-2">
+                    <tr class="menu-item" id="2">
                         <td id="item-2">Spinach Artichoke Dip</td>
                         <td id="price-2">$10.95</td>
-                        <td id='select-2'><button type='button' value='2' id='cb-2' onclick="openPopup()" class="addItem">Add</button>
-                            <div class="popup" id="popup">
-                                <h2>Choice of Sauces</h2>
-                                <button type='button' onclick="closePopup()" class="popup-button">Buffalo Sauce</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Signature 841</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Sweet Chili Sauce</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Garlic Oarmesan</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Brew House Barbeque</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Honey Mustard</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">None</button>
+                        <td id='select-2'><button type='button' value='2' id='cb-2' class="addItem">Add</button>
+                    </tr>
+                    <tr class="menu-item" id="3">
+                        <td id="item-3">Quesadilla</td>
+                        <td id="price-3">$9.95</td>
+                        <td id='select-3'><button type='button' value='3' id='cb-3' onclick="openPopup(3)" class="addItem">Add</button>
+                            <div class="popup" id="popup-3">
+                                <h2>Modification Option</h2>
+                                <button type='button' onclick="closePopup(3)" class="popup-button">Add Chicken</button>
+                                <button type='button' onclick="closePopup(3)" class="popup-button">Add Beef</button>
                             </div>
                     </tr>
-                    <tr class="menu-item" id="st-3">
-                        <td id="item-3">Mozzarella Sticks</td>
-                        <td id="price-3">$10.95</td> 
-                        <td id='select-3'><button type='button' value='3' id='cb-3' onclick="openPopup()" class="addItem">Add</button>
-                            <div class="popup" id="popup">
-                                <h2>Choice of Sauces</h2>
-                                <button type='button' onclick="closePopup()" class="popup-button">Buffalo Sauce</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Signature 841</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Sweet Chili Sauce</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Garlic Oarmesan</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Brew House Barbeque</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Honey Mustard</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">None</button>
-                            </div>
-                    </tr>
-                    <tr class="menu-item" id="st-4">
-                        <td id="item-4">Quesadilla- Orginal</td>
+                    <tr class="menu-item" id="4">
+                        <td id="item-4">Bavarian Pretzel Sticks</td>
                         <td id="price-4">$9.95</td>
-                        <td id='select-4'><button type='button' value='4' id='cb-4' onclick="openPopup()" class="addItem">Add</button>
-                            <div class="popup" id="popup">
-                                <h2>Choice of Sauces</h2>
-                                <button type='button' onclick="closePopup()" class="popup-button">Buffalo Sauce</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Signature 841</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Sweet Chili Sauce</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Garlic Oarmesan</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Brew House Barbeque</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Honey Mustard</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">None</button>
+                        <td id='select-4'><button type='button' value='4' id='cb-4' class="addItem">Add</button>
+                    </tr>
+                    <tr class="menu-item" id="5">
+                        <td id="item-5">Tatchos</td>
+                        <td id="price-5">$10.95</td>
+                        <td id='select-5'><button type='button' value='5' id='cb-5' onclick="openPopup(5)" class="addItem">Add</button>
+                            <div class="popup" id="popup-5">
+                                <h2>Modification Option</h2>
+                                <button type='button' onclick="closePopup(5)" class="popup-button">841 style</button>
+                                <button type='button' onclick="closePopup(5)" class="popup-button">Chicken</button>
+                                <button type='button' onclick="closePopup(5)" class="popup-button">Beef</button>
                             </div>
                     </tr>
-                    <tr class="menu-item" id="st-8">
-                        <td id="item-8">Quesadilla- Seasoned Chicken</td>
-                        <td id="price-8">$12.45</td>
-                        <td id='select-8'><button type='button' value='8' id='cb-8'  onclick="openPopup()" class="addItem">Add</button>
-                            <div class="popup" id="popup">
-                                <h2>Choice of Sauces</h2>
-                                <button type='button' onclick="closePopup()" class="popup-button">Buffalo Sauce</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Signature 841</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Sweet Chili Sauce</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Garlic Oarmesan</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Brew House Barbeque</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Honey Mustard</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">None</button>
+                    <tr class="menu-item" id="6">
+                        <td id="item-6">Mozzarella Sticks</td>
+                        <td id="price-6">$10.95</td>
+                        <td id='select-6'><button type='button' value='6' id='cb-6' onclick="openPopup(6)" class="addItem">Add</button>
+                            <div class="popup" id="popup-6">
+                                <h2>Sauce Option</h2>
+                                <button type='button' onclick="closePopup(6)" class="popup-button">841</button>
+                                <button type='button' onclick="closePopup(6)" class="popup-button">BBQ</button>
+                                <button type='button' onclick="closePopup(6)" class="popup-button">Buffalo</button>
+                                <button type='button' onclick="closePopup(6)" class="popup-button">Ranch</button>
+                                <button type='button' onclick="closePopup(6)" class="popup-button">Sriracha</button>
+                                <button type='button' onclick="closePopup(6)" class="popup-button">Sweet Chili</button>
                             </div>
                     </tr>
-                    <tr class="menu-item" id="st-9">
-                        <td id="item-9">Quesadilla- Smoked Brisket</td>
-                        <td id="price-9">$12.45</td>
-                        <td id='select-9'><button type='button' value='9' id='cb-9' onclick="openPopup()" class="addItem">Add</button>
-                            <div class="popup" id="popup">
-                                <h2>Choice of Sauces</h2>
-                                <button type='button' onclick="closePopup()" class="popup-button">Buffalo Sauce</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Signature 841</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Sweet Chili Sauce</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Garlic Oarmesan</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Brew House Barbeque</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Honey Mustard</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">None</button>
+                    <tr class="menu-item" id="7">
+                        <td id="item-7">Colby Cheese Curds</td>
+                        <td id="price-7">$12.95</td>
+                        <td id='select-7'><button type='button' value='7' id='cb-7' onclick="openPopup(7)" class="addItem">Add</button>
+                            <div class="popup" id="popup-7">
+                                <h2>Sauce Option</h2>
+                                <button type='button' onclick="closePopup(7)" class="popup-button">841</button>
+                                <button type='button' onclick="closePopup(7)" class="popup-button">BBQ</button>
+                                <button type='button' onclick="closePopup(7)" class="popup-button">Buffalo</button>
+                                <button type='button' onclick="closePopup(7)" class="popup-button">Ranch</button>
+                                <button type='button' onclick="closePopup(7)" class="popup-button">Sriracha</button>
+                                <button type='button' onclick="closePopup(7)" class="popup-button">Sweet Chili</button>
                             </div>
                     </tr>
-                    <tr class="menu-item" id="st-5">
-                        <td id="item-5">Colby Cheese Curds</td>
-                        <td id="price-5">$12.95</td> 
-                        <td id='select-5'><button type='button' value='5' id='cb-5' onclick="openPopup()" class="addItem">Add</button>
-                            <div class="popup" id="popup">
-                                <h2>Choice of Sauces</h2>
-                                <button type='button' onclick="closePopup()" class="popup-button">Buffalo Sauce</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Signature 841</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Sweet Chili Sauce</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Garlic Oarmesan</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Brew House Barbeque</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Honey Mustard</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">None</button>
-                            </div>
-                    </tr>
-                    <tr class="menu-item" id="st-6">
-                        <td id="item-6">Bavarian Pretzel Sticks</td>
-                        <td id="price-6">$9.95</td> 
-                        <td id='select-6'><button type='button' value='6' id='cb-6' onclick="openPopup()" class="addItem">Add</button>
-                            <div class="popup" id="popup">
-                                <h2>Choice of Sauces</h2>
-                                <button type='button' onclick="closePopup()" class="popup-button">Buffalo Sauce</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Signature 841</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Sweet Chili Sauce</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Garlic Oarmesan</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Brew House Barbeque</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Honey Mustard</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">None</button>
-                            </div>
-                    </tr>
-                    <tr class="menu-item" id="st-7">
-                        <td id="item-7">Asiago Chicken Wraps</td>
-                        <td id="price-7">$9.95</td> 
-                        <td id='select-7'><button type='button' value='7' id='cb-7' onclick="openPopup()" class="addItem">Add</button>
-                            <div class="popup" id="popup">
-                                <h2>Choice of Sauces</h2>
-                                <button type='button' onclick="closePopup()" class="popup-button">Buffalo Sauce</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Signature 841</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Sweet Chili Sauce</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Garlic Oarmesan</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Brew House Barbeque</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">Honey Mustard</button>
-                                <button type='button' onclick="closePopup()" class="popup-button">None</button>
+                    <tr class="menu-item" id="8">
+                        <td id="item-8">Asiago Chicken Wraps</td>
+                        <td id="price-8">$9.95</td>
+                        <td id='select-8'><button type='button' value='8' id='cb-8' onclick="openPopup(8)" class="addItem">Add</button>
+                            <div class="popup" id="popup-8">
+                                <h2>Sauce Option</h2>
+                                <button type='button' onclick="closePopup(8)" class="popup-button">841</button>
+                                <button type='button' onclick="closePopup(8)" class="popup-button">BBQ</button>
+                                <button type='button' onclick="closePopup(8)" class="popup-button">Buffalo</button>
+                                <button type='button' onclick="closePopup(8)" class="popup-button">Ranch</button>
+                                <button type='button' onclick="closePopup(8)" class="popup-button">Sriracha</button>
+                                <button type='button' onclick="closePopup(8)" class="popup-button">Sweet Chili</button>
                             </div>
                     </tr>
                 </tbody>
@@ -216,11 +139,12 @@
               <label><input type="button" id="clear" value="Clear"></label>
         </div>
         <script>
-            let popup = document.getElementById("popup");
-            function openPopup(){
+            function openPopup(num){
+                let popup = document.getElementById("popup-" + num);
                 popup.classList.add("open-popup");
             }
-            function closePopup(){
+            function closePopup(num){
+                let popup = document.getElementById("popup-" + num);
                 popup.classList.remove("open-popup");
             }
         </script>
