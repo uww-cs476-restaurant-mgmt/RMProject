@@ -16,23 +16,20 @@
 
         <!-- Create a navigation bar to lead to different html pages based
         on category/section of the menu -->
+        <!-- Create a navigation bar to lead to different html pages based
+        on category/section of the menu -->
         <div class="leftBox">
             <ul>
                 <li><label><input type="button" class="categoryButtons" id="allCategories" value="All Categories"></label></li>
-                <li><label><input type="button" class="categoryButtons" id="beveragesAlcohol" value="Beverages/Alcohol"></label></li>
                 <li><label><input type="button" class="categoryButtons" id="starters" value="Starters"></label></li>
                 <li><label><input type="button" class="categoryButtons" id="baskets" value="Baskets"></label></li>
                 <li><label><input type="button" class="categoryButtons" id="salads" value="Salads"></label></li>
                 <li><label><input type="button" class="categoryButtons" id="wraps" value="Wraps"></label></li>
-                <li><label><input type="button" class="categoryButtons" id="burgers" value="Burgers"></label></li>
-                <li><label><input type="button" class="categoryButtons" id="beefPork" value="Beef & Pork"></label></li>
                 <li><label><input type="button" class="categoryButtons" id="sandwiches" value="Sandwiches"></label></li>
-                <li><label><input type="button" class="categoryButtons" id="chicken" value="Chicken"></label></li>
-                <li><label><input type="button" class="categoryButtons" id="seafood" value="Seafood"></label></li>
-                <li><label><input type="button" class="categoryButtons" id="pastaStirFry" value="Pasta & Stir Fry"></label></li>
+                <li><label><input type="button" class="categoryButtons" id="entrees" value="Entrees"></label></li>
             </ul>
         </div>
-        
+
         <!-- Food items for middle sections -- different for every html page -->
         <div class="middleBox">
             <table class="table">
@@ -41,32 +38,59 @@
                         <td>Wraps</td>
                     </tr>
                 </thead>
-                 <tbody class="menuItems">
-                    <tr class="menu-item" id="st-0">
-                        <td id="item-0">Caesar Wrap</td>
-                        <td id="price-0">$13.95</td>
-                        <td id='select-0'><button type='button' value='0' id='cb-0' class="addItem">Add</button>
+                <tbody class="menuItems">
+                    <tr class="menu-item" id="19">
+                        <td id="item-19">Caesar Wrap</td>
+                        <td id="price-19">$13.95</td>
+                        <td id='select-19'><button type='button' value='19' id='cb-19' onclick="openPopup(19)" class="addItem">Add</button>
+                            <div class="popup" id="popup-19">
+                                <h2>Modification Option</h2>
+                                <button type='button' onclick="closePopup(19)" class="popup-button">Crispy Chicken</button>
+                                <button type='button' onclick="closePopup(19)" class="popup-button">Grilled Chicken</button>
+                                <h2>Side Option</h2>
+                            </div>
                     </tr>
-                    <tr class="menu-item" id="st-1">
-                        <td id="item-1">CCBR Wrap</td>
-                        <td id="price-1">$13.95</td>
-                        <td id='select-1'><button type='button' value='1' id='cb-1' class="addItem">Add</button>
+                    <tr class="menu-item" id="20">
+                        <td id="item-20">Sriracha Ranch Wrap</td>
+                        <td id="price-20">$13.95</td> 
+                        <td id='select-20'><button type='button' value='20' id='cb-20' onclick="openPopup(20)" class="addItem">Add</button>
+                            <div class="popup" id="popup-20">
+                                <h2>Modification Option</h2>
+                                <button type='button' onclick="closePopup(20)" class="popup-button">Crispy Chicken</button>
+                                <button type='button' onclick="closePopup(20)" class="popup-button">Grilled Chicken</button>
+                                <h2>Side Option</h2>
+                            </div>
                     </tr>
-                    <tr class="menu-item" id="st-2">
-                        <td id="item-2">841 Vegerarian Wrap</td>
-                        <td id="price-2">$14.25</td>
-                        <td id='select-2'><button type='button' value='2' id='cb-2' class="addItem">Add</button>
+                    <tr class="menu-item" id="21">
+                        <td id="item-21">CCBR Wrap</td>
+                        <td id="price-21">$13.95</td>
+                        <td id='select-21'><button type='button' value='21' id='cb-21' onclick="openPopup(21)" class="addItem">Add</button>
+                            <div class="popup" id="popup-21">
+                                <h2>Modification Option</h2>
+                                <button type='button' onclick="closePopup(21)" class="popup-button">Crispy Chicken</button>
+                                <button type='button' onclick="closePopup(21)" class="popup-button">Grilled Chicken</button>
+                                <h2>Side Option</h2>
+                            </div>
                     </tr>
-                    <tr class="menu-item" id="st-3">
-                        <td id="item-3">Sriracha Ranch Wrap</td>
-                        <td id="price-3">$13.95</td> 
-                        <td id='select-3'><button type='button' value='3' id='cb-3' class="addItem">Add</button>
+                    <tr class="menu-item" id="22">
+                        <td id="item-22">Santa Fe Wrap</td>
+                        <td id="price-22">$14.95</td>
+                        <td id='select-22'><button type='button' value='22' id='cb-22' onclick="openPopup(22)" class="addItem">Add</button>
+                            <div class="popup" id="popup-22">
+                                <h2>Modification Option</h2>
+                                <button type='button' onclick="closePopup(22)" class="popup-button">Crispy Chicken</button>
+                                <button type='button' onclick="closePopup(22)" class="popup-button">Grilled Chicken</button>
+                                <h2>Side Option</h2>
+                            </div>
                     </tr>
-                    <tr class="menu-item" id="st-4">
-                        <td id="item-4">Santa Fe Wrap</td>
-                        <td id="price-4">$14.95</td>
-                        <td id='select-4'><button type='button' value='4' id='cb-4' class="addItem">Add</button>
-                    </tr>
+                    <tr class="menu-item" id="mi-23">
+                        <td id="item-23">841 Vegetarian Wrap</td>
+                        <td id="price-23">$14.25</td>
+                        <td id='select-23'><button type='button' value='23' id='cb-23' onclick="openPopup(23)" class="addItem">Add</button>
+                            <div class="popup" id="popup-23">
+                                <h2>Side Option</h2>
+                            </div>
+                    </tr>                   
                 </tbody>
             </table>
         </div>
@@ -90,5 +114,15 @@
               <label><input type="button" id="checkout" value="Checkout"></label>
               <label><input type="button" id="clear" value="Clear"></label>
         </div>
+        <script>
+            function openPopup(num){
+                let popup = document.getElementById("popup-" + num);
+                popup.classList.add("open-popup");
+            }
+            function closePopup(num){
+                let popup = document.getElementById("popup-" + num);
+                popup.classList.remove("open-popup");
+            }
+        </script>
     </body>
 </html>
