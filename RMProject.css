@@ -108,6 +108,7 @@ td:nth-child(2) { /* Separate headers in shopping cart from each other */
     border-bottom: 1px solid black;
 }
 
+
 .popup{
     width: 400px;
     background: maroon;
@@ -139,11 +140,10 @@ td:nth-child(2) { /* Separate headers in shopping cart from each other */
     width: 100px;
     height: 37px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-    
+
 }
 .open-popup{
     visibility: visible;
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
 }
-
