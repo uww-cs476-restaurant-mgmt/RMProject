@@ -110,7 +110,7 @@ td:nth-child(2) { /* Separate headers in shopping cart from each other */
 
 
 .popup{
-    width: 400px;
+    width: 500px;
     background: maroon;
     border-radius: 6px;
     position: absolute;
