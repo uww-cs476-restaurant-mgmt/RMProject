@@ -53,16 +53,6 @@ function clearAll() {
     var newCart = document.createElement("tbody");
     // Replace the old shopping cart tbody with the new one
     oldCart.parentNode.replaceChild(newCart, oldCart);
-
-    // Clear local storage
-    localStorage.clear();
-
-    // Set the global counter for localStorage back to 0
-    counter = 0;
-
-    // Set the global totalPrice variable back to 0
-    totalPrice = 0;
-
     // Remove label for total price
     document.getElementById("totalPriceLabel").innerHTML = ""; 
     // Remove total price of all items

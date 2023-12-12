@@ -13,7 +13,6 @@
             <!-- Display the 841 Brewhouse logo in the top left corner -->
             <img src="brewhouseLogo.avif" alt="841 Brewhouse's Logo" width="100px">
         </div>
-
         <!-- Create a navigation bar to lead to different html pages based
         on category/section of the menu -->
         <div class="leftBox">
@@ -27,9 +26,9 @@
                 <li><label><input type="button" class="categoryButtons" id="entrees" value="Entrees"></label></li>
             </ul>
         </div>
-        
+
         <!-- Food items for middle sections -- different for every html page -->
-      <div class="middleBox">
+        <div class="middleBox">
             <table class="table">
                 <thead>
                     <tr>
@@ -43,21 +42,22 @@
                         <td id='select-15'><button type='button' value='15' id='cb-15' onclick="openPopup(15)" class="addItem">Add</button>
                             <div class="popup" id="popup-15">
                                 <h2>Modification Option</h2>
-                                <button type='button' onclick="closePopup(15)" class="popup-button">Add Chicken</button>
-                                <button type='button' onclick="closePopup(15)" class="popup-button">Add Beef</button>
-                                <button type='button' onclick="closePopup(15)" class="popup-button">Add Salmon</button>
-                                <button type='button' onclick="closePopup(15)" class="popup-button">Add Shrimp</button>
+                                <button type='button' id="m-60" class="popup-button">Add Chicken</button>
+                                <button type='button' id="m-61" class="popup-button">Add Beef</button>
+                                <button type='button' id="m-62" class="popup-button">Add Salmon</button>
+                                <button type='button' id="m-63" class="popup-button">Add Shrimp</button>
                                 <h2>Dressing Option</h2>
-                                <button type='button' onclick="closePopup(15)" class="popup-button">Ranch</button>
-                                <button type='button' onclick="closePopup(15)" class="popup-button">Garlic Parm</button>
-                                <button type='button' onclick="closePopup(15)" class="popup-button">Bleu Cheese</button>
-                                <button type='button' onclick="closePopup(15)" class="popup-button">French</button>
-                                <button type='button' onclick="closePopup(15)" class="popup-button">Light French</button>
-                                <button type='button' onclick="closePopup(15)" class="popup-button">Balsamic</button>
-                                <button type='button' onclick="closePopup(15)" class="popup-button">Raspberry Vinegar</button>
-                                <button type='button' onclick="closePopup(15)" class="popup-button">Thousand Island</button>
-                                <button type='button' onclick="closePopup(15)" class="popup-button">Honey Mustard</button>
-                                <button type='button' onclick="closePopup(15)" class="popup-button">Caesar</button>
+                                <button type='button' id="d-1" class="popup-button">Ranch</button>
+                                <button type='button' id="d-2" class="popup-button">Thousand Island</button>
+                                <button type='button' id="d-3" class="popup-button">Bleu Cheese</button>
+                                <button type='button' id="d-4" class="popup-button">French</button>
+                                <button type='button' id="d-5" class="popup-button">Light French</button>
+                                <button type='button' id="d-6" class="popup-button">Balsamic</button>
+                                <button type='button' id="d-7" class="popup-button">Raspberry Vinegar</button>
+                                <button type='button' id="d-8" class="popup-button">Garlic Parm</button>
+                                <button type='button' id="d-9" class="popup-button">Honey Mustard</button>
+                                <button type='button' id="d-10" class="popup-button">Caesar</button>
+                                <h2><button type='button' onclick="closePopup(15)" class="done-button">Done</button></h2>
                             </div>
                     </tr>
                     <tr class="menu-item" id="16">
@@ -66,19 +66,20 @@
                         <td id='select-16'><button type='button' value='16' id='cb-16' onclick="openPopup(16)" class="addItem">Add</button>
                             <div class="popup" id="popup-16">
                                 <h2>Modification Option</h2>
-                                <button type='button' onclick="closePopup(16)" class="popup-button">Add Chicken</button>
-                                <button type='button' onclick="closePopup(16)" class="popup-button">Add Beef</button>
+                                <button type='button' id="m-64" class="popup-button">Add Chicken</button>
+                                <button type='button' id="m-65" class="popup-button">Add Beef</button>
                                 <h2>Dressing Option</h2>
-                                <button type='button' onclick="closePopup(16)" class="popup-button">Ranch</button>
-                                <button type='button' onclick="closePopup(16)" class="popup-button">Garlic Parm</button>
-                                <button type='button' onclick="closePopup(16)" class="popup-button">Bleu Cheese</button>
-                                <button type='button' onclick="closePopup(16)" class="popup-button">French</button>
-                                <button type='button' onclick="closePopup(16)" class="popup-button">Light French</button>
-                                <button type='button' onclick="closePopup(16)" class="popup-button">Balsamic</button>
-                                <button type='button' onclick="closePopup(16)" class="popup-button">Raspberry Vinegar</button>
-                                <button type='button' onclick="closePopup(16)" class="popup-button">Thousand Island</button>
-                                <button type='button' onclick="closePopup(16)" class="popup-button">Honey Mustard</button>
-                                <button type='button' onclick="closePopup(16)" class="popup-button">Caesar</button>
+                                <button type='button' id="d-11" class="popup-button">Ranch</button>
+                                <button type='button' id="d-12" class="popup-button">Thousand Island</button>
+                                <button type='button' id="d-13" class="popup-button">Bleu Cheese</button>
+                                <button type='button' id="d-14" class="popup-button">French</button>
+                                <button type='button' id="d-15" class="popup-button">Light French</button>
+                                <button type='button' id="d-16" class="popup-button">Balsamic</button>
+                                <button type='button' id="d-17" class="popup-button">Raspberry Vinegar</button>
+                                <button type='button' id="d-18" class="popup-button">Garlic Parm</button>
+                                <button type='button' id="d-19" class="popup-button">Honey Mustard</button>
+                                <button type='button' id="d-20" class="popup-button">Caesar</button>
+                                <h2><button type='button' onclick="closePopup(16)" class="done-button">Done</button></h2>
                             </div>
                     </tr>
                     <tr class="menu-item" id="17">
@@ -87,20 +88,21 @@
                         <td id='select-17'><button type='button' value='17' id='cb-17' onclick="openPopup(17)" class="addItem">Add</button>
                             <div class="popup" id="popup-17">
                                 <h2>Modification Option</h2>
-                                <button type='button' onclick="closePopup(17)" class="popup-button">Add Chicken</button>
-                                <button type='button' onclick="closePopup(17)" class="popup-button">Add Salmon</button>
-                                <button type='button' onclick="closePopup(17)" class="popup-button">Add Shrimp</button>
+                                <button type='button' id="m-66" class="popup-button">Add Chicken</button>
+                                <button type='button' id="m-67" class="popup-button">Add Salmon</button>
+                                <button type='button' id="m-68" class="popup-button">Add Shrimp</button>
                                 <h2>Dressing Option</h2>
-                                <button type='button' onclick="closePopup(17)" class="popup-button">Ranch</button>
-                                <button type='button' onclick="closePopup(17)" class="popup-button">Garlic Parm</button>
-                                <button type='button' onclick="closePopup(17)" class="popup-button">Bleu Cheese</button>
-                                <button type='button' onclick="closePopup(17)" class="popup-button">French</button>
-                                <button type='button' onclick="closePopup(17)" class="popup-button">Light French</button>
-                                <button type='button' onclick="closePopup(17)" class="popup-button">Balsamic</button>
-                                <button type='button' onclick="closePopup(17)" class="popup-button">Raspberry Vinegar</button>
-                                <button type='button' onclick="closePopup(17)" class="popup-button">Thousand Island</button>
-                                <button type='button' onclick="closePopup(17)" class="popup-button">Honey Mustard</button>
-                                <button type='button' onclick="closePopup(17)" class="popup-button">Caesar</button>
+                                <button type='button' id="d-21" class="popup-button">Ranch</button>
+                                <button type='button' id="d-22" class="popup-button">Thousand Island</button>
+                                <button type='button' id="d-23" class="popup-button">Bleu Cheese</button>
+                                <button type='button' id="d-24" class="popup-button">French</button>
+                                <button type='button' id="d-25" class="popup-button">Light French</button>
+                                <button type='button' id="d-26" class="popup-button">Balsamic</button>
+                                <button type='button' id="d-27" class="popup-button">Raspberry Vinegar</button>
+                                <button type='button' id="d-28" class="popup-button">Garlic Parm</button>
+                                <button type='button' id="d-29" class="popup-button">Honey Mustard</button>
+                                <button type='button' id="d-30" class="popup-button">Caesar</button>
+                                <h2><button type='button' onclick="closePopup(17)" class="done-button">Done</button></h2>
                             </div>
                     </tr>
                     <tr class="menu-item" id="18">
@@ -109,26 +111,26 @@
                         <td id='select-18'><button type='button' value='18' id='cb-18' onclick="openPopup(18)" class="addItem">Add</button>
                             <div class="popup" id="popup-18">
                                 <h2>Modification Option</h2>
-                                <button type='button' onclick="closePopup(18)" class="popup-button">Add Chicken</button>
-                                <button type='button' onclick="closePopup(18)" class="popup-button">Add Salmon</button>
-                                <button type='button' onclick="closePopup(18)" class="popup-button">Add Shrimp</button>
+                                <button type='button' id="m-69" class="popup-button">Add Chicken</button>
+                                <button type='button' id="m-70" class="popup-button">Add Salmon</button>
+                                <button type='button' id="m-71" class="popup-button">Add Shrimp</button>
                                 <h2>Dressing Option</h2>
-                                <button type='button' onclick="closePopup(18)" class="popup-button">Ranch</button>
-                                <button type='button' onclick="closePopup(18)" class="popup-button">Garlic Parm</button>
-                                <button type='button' onclick="closePopup(18)" class="popup-button">Bleu Cheese</button>
-                                <button type='button' onclick="closePopup(18)" class="popup-button">French</button>
-                                <button type='button' onclick="closePopup(18)" class="popup-button">Light French</button>
-                                <button type='button' onclick="closePopup(18)" class="popup-button">Balsamic</button>
-                                <button type='button' onclick="closePopup(18)" class="popup-button">Raspberry Vinegar</button>
-                                <button type='button' onclick="closePopup(18)" class="popup-button">Thousand Island</button>
-                                <button type='button' onclick="closePopup(18)" class="popup-button">Honey Mustard</button>
-                                <button type='button' onclick="closePopup(18)" class="popup-button">Caesar</button>
+                                <button type='button' id="d-31" class="popup-button">Ranch</button>
+                                <button type='button' id="d-32" class="popup-button">Thousand Island</button>
+                                <button type='button' id="d-33" class="popup-button">Bleu Cheese</button>
+                                <button type='button' id="d-34" class="popup-button">French</button>
+                                <button type='button' id="d-35" class="popup-button">Light French</button>
+                                <button type='button' id="d-36" class="popup-button">Balsamic</button>
+                                <button type='button' id="d-37" class="popup-button">Raspberry Vinegar</button>
+                                <button type='button' id="d-38" class="popup-button">Garlic Parm</button>
+                                <button type='button' id="d-39" class="popup-button">Honey Mustard</button>
+                                <button type='button' id="d-40" class="popup-button">Caesar</button>
+                                <h2><button type='button' onclick="closePopup(18)" class="done-button">Done</button></h2>
                             </div>
                     </tr>
                 </tbody>
             </table>
         </div>
-
         <!-- Create a shopping cart to hold all of the currently selected items -->
         <div class="rightBox">
             <table class="table">
